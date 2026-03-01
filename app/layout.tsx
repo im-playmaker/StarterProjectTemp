@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cousine } from "next/font/google";
 import "./globals.css";
 
-// custom fonts you can change it
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+const cousine = Cousine({ weight: ["400"], subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Starter Template For Saas Solution",
   description: "Template to start your SAAS Solution",
@@ -25,11 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={` ${cousine.className} antialiased`}>{children}</body>
     </html>
   );
 }
