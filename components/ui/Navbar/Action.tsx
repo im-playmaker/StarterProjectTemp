@@ -3,12 +3,18 @@ import { Button } from "../button";
 
 const Action = () => {
   return (
-    <div className="flex flex-row-reverse gap-4 p-4 space-x-6 col-span-5 ">
-      <Button asChild className="rounded-full  hover:bg-gray-100 font-semibold">
+    <div className="flex justify-center  p-3">
+      <Button
+        asChild
+        className="rounded-full   font-semibold hover:bg-gray-200  transition delay-150 ease-in-out hover:-translate-y-1"
+      >
         <Link href="/sign-in">Sign in</Link>
       </Button>
 
-      <Button asChild className="rounded-full hover:bg-gray-100 font-semibold">
+      <Button
+        asChild
+        className="rounded-full transition delay-150 ease-in-out hover:-translate-y-1  hover:bg-gray-800 hover:text-white font-semibold bg-black text-white"
+      >
         <Link href="/sign-in">Sign up</Link>
       </Button>
     </div>

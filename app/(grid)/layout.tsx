@@ -10,14 +10,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="text-black grid ">
-      <GridContainer className="p-2" cols={12}>
+    <main className="text-black">
+      <GridContainer className="flex flex-row" cols={3}>
         <Logo />
         <NavBar />
         <Action />
       </GridContainer>
-      <GridContainer cols={12}>
-        <div className=" col-span-12 h-screen">{children}</div>
+      <GridContainer cols={1}>
+        <div className="h-screen bg-white">{children}</div>
       </GridContainer>
     </main>
   );

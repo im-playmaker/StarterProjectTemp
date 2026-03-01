@@ -1,6 +1,3 @@
-import React from "react";
-import Link from "next/link";
-import { NavigationMenu } from "radix-ui";
 import NavLink from "./NavLink";
 
 const NavBar = () => {
@@ -13,7 +10,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className=" flex space-x-4  col-span-5 font-semibold">
+    <div className="flex flex-row justify-items-start">
       {navigation.map((navlink, i: number) => (
         <NavLink key={i} navLink={navlink} />
       ))}

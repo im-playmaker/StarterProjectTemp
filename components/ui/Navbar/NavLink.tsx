@@ -12,9 +12,9 @@ const NavLink = ({ navLink }: { navLink: { name: string; href: string } }) => {
   return (
     <Link
       href={href}
-      className={`flex ${isActive ? "text-purple-600" : "text-black"} justify-center p-4 rounded-md font-sans  hover:text-purple-600 `}
+      className={` ${isActive ? "text-orange-600" : "text-black"} p-4 hover:duration-400  hover:text-gray-500 `}
     >
-      <p>{name}</p>
+      <span>{name}</span>
     </Link>
   );
 };
