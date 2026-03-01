@@ -13,6 +13,15 @@ p {
   all: unset;
 }
 
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 .NavigationMenuRoot {
   position: relative;
   display: flex;

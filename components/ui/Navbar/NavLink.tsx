@@ -5,12 +5,10 @@ import { usePathname } from "next/navigation";
 const NavLink = ({ navLink }: { navLink: { name: string; href: string } }) => {
   // to use this hook, we shoold add use client at the top
   const pathName = usePathname();
-  console.log("the path name is : ", pathName);
 
   // to avoid using Navlink.name
   const { name, href } = navLink;
   const isActive = pathName === href;
-  console.log(isActive);
   return (
     <Link
       href={href}
