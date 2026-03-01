@@ -17,7 +17,7 @@ export default function RootLayout({
         <Action />
       </GridContainer>
       <GridContainer cols={12}>
-        <div className="bg-blue-400 col-span-12 h-screen">{children}</div>
+        <div className=" col-span-12 h-screen">{children}</div>
       </GridContainer>
     </main>
   );
