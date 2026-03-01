@@ -14,8 +14,8 @@ const NavBar = () => {
 
   return (
     <div className=" flex space-x-4  col-span-5 font-semibold">
-      {navigation.map((navlink) => (
-        <NavLink navLink={navlink} />
+      {navigation.map((navlink, i: number) => (
+        <NavLink key={i} navLink={navlink} />
       ))}
     </div>
   );
